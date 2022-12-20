@@ -62,7 +62,7 @@ function calculateUserResults(userChoice, computerChoice) {
     resultUsers = "Point for CPU!";
   }
   if (userChoice === "Rock" && computerChoice === "Paper") {
-    resultUsers = "Defeated by an AI!";
+    resultUsers = "Taste Defeat!";
   }
   if (userChoice === "Paper" && computerChoice === "Scissors"
   ) {
