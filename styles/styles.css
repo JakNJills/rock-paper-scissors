@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nota Sans', sans-serif;
+  background-image: url('../images/RPS.webp');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+
+}
+
+.mobile-screen,
+.tablet-screen {
+  display: none;
+}
+
+/*header stylings*/
+header.laptop-screen{
+  width: 100%;
+  margin: 4px auto 20px;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  display: inline;
+}
+
+.rocks {
+  font-weight: 600;
+  background-color: #000;
+  color: rgb(209, 208, 208);
+  border: solid rgb(209, 208, 208) 4px;
+}
+
+.papers {
+  border: solid 4px #000;
+  background-color: #deb887;
+  font-weight: 600;
+  color: #000;
+}
+
+.bg-Scissors {
+  color: rgb(25, 128, 224);
+  border: solid rgb(25, 128, 224) 4px;
+  background-color: rgb(209, 208, 208);
+}
+
+.scis-half {
+  font-size: 2.17rem;
+  font-weight: 600;
+
+}
+
+.sors-half {
+  font-weight: 400;
+}
+
+/*main content*/
+.gb-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+  width: 100%;
+
+}
+
+/*bg general display stylings*/
+.game-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 100%;
+}
+
+
+h3 {
+  font-size: 1.85rem;
+  text-align: center;
+  margin: 0;
+}
+
+
+/*CPU gb stylings*/
+div.computer-div {
+  height: 220px;
+  width: 29%;
+  color: rgb(15, 118, 254);
+  border: solid 4px rgb(25, 128, 224);
+  margin: 0;
+  background-color:rgb(249, 248, 248);
+}
+
+.computer-div h3 {
+  margin: 0 0 6px 0;
+  border-bottom: solid 4px rgb(15, 78, 224);
+}
+
+div.computer-div p,
+div.user-div p {
+  margin: 0 2px;
+  padding: 3px;
+}
+
+p.wordStyle {
+  border-bottom: #000 2px solid;
+  width: 30%;
+  padding: 0 3px;
+  font-size: 1.13rem;
+}
+
+p.response-style {
+  text-align: center;
+  font-size: 1.42rem!important;
+}
+
+.computer-div p.response-style {
+  color: rgb(15, 118, 254)
+}
+
+/*User gb stylings*/
+div.user-div {
+  height: 220px;
+  width: 29%;
+  background-color: rgb(209, 208, 208);
+  border: solid 4px #000;
+  margin: 0;
+}
+
+.user-div h3 {
+  color: #000;
+  border-bottom: solid 4px black;
+  margin: 0 0 6px 0;
+}
+
+/*button stylings*/
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button{
+  cursor: pointer;
+  border-radius: 20px;
+  display: block;
+  width: 15%;
+  height: 40px;
+  font-size: 1.4rem;
+
+}
+
+.rock-button {
+  background-color: black;
+  color: white;
+  transition: background-color .15s;
+  border: solid 4px white;
+
+}
+
+.rock-button:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: solid 4px black;
+}
+
+.rock-button:active {
+  background-color: darkgray;
+
+}
+
+.paper-button {
+  border: solid 4px #000;
+  background-color: #deb887;
+  color: black;
+}
+
+.paper-button:hover {
+  color: #deb887;
+  background-color: #000;
+  border: solid 4px #deb887;
+}
+
+.paper-button:active {
+  background-color: lightgrey;
+  color: black;
+}
+
+.scissors-button {
+  border: solid 4px rgb(25, 128, 224);
+  background-color: rgb(249, 248, 248);
+  color: rgb(25, 128, 224);
+}
+
+.scissors-button:hover {
+  border: solid 4px rgb(249, 248, 248);
+  background-color: rgb(25, 128, 224);
+  color: rgb(252, 252, 252);
+}
+
+.scissors-button:active {
+  background-color: rgb(25, 178, 234);
+  color: black;
+}

@@ -1,0 +1,50 @@
+.laptop-screen,
+.tablet-screen {
+  display: none!important;
+}
+
+.mobile-screen {
+  display: block!important;
+}
+
+header.mobile-screen {
+  width: 100%;
+  text-align: center;
+}
+
+.game-board-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+div.computer-div,
+div.user-div {
+  width: 92%;
+  height: 158px;
+}
+
+h3 {
+  font-size: 1.04rem;
+}
+
+p.wordStyle {
+  font-size: .8761rem;
+}
+
+p.response-style {
+  font-size: .913rem;
+}
+
+.button-container {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  width: 70px!important;
+  height: 10px!important;
+  font-size: 1rem!important;
+  border-radius: 0px!important;
+}

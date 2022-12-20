@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 788px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 440px)" href="./styles/mobile.css">
+  </head>
+  <body>
+    <header class="laptop-screen">
+      <h2 class="rocks">
+        <span class="laptop-screen">Rock!</span>
+      </h2>
+      <h2 class="papers">
+        <span class="laptop-screen">Paper!</span>
+      </h2>
+      <h2 class="bg-Scissors">
+        <span class="laptop-screen">
+          <span class="scis-half">Scis</span><span class="sors-half">sors!</span>
+        </span>
+      </h2>
+    </header>
+    <header class="tablet-screen">
+      <h2>
+        <span class="rocks">Rock</span>
+        <span class="papers">Paper</span>
+        <span class="bg-Scissors">Scissors</span>
+      </h2>
+    </header>
+    <header class="mobile-screen">
+      <h2>
+        <span class="rocks">R!</span>
+        <span class="papers">P!</span>
+        <span class="bg-Scissors">S!</span>
+      </h2>
+    </header>
+    <div class="gb-btn-container">
+      <div class="game-board">
+        <div class="computer-div">
+          <h3>Computer</h3>
+          <p class="wordStyle">Choice:</p>
+          <p class="response-style" id="computerChoice"> </p>
+          <p class="wordStyle">Results:</p>
+          <p class="response-style" id="computerResults"> </p>
+        </div>
+        <div class="user-div">
+          <h3>User</h3>
+          <p class="wordStyle">Choice:</p>
+          <p id="userChoice" class="response-style"> </p>
+          <p class="wordStyle">Results:</p> 
+          <p id="userResults" class="response-style"> </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="rock-button" id="Rock">Rock</button>
+        <button class="paper-button" id="Paper">Paper</button>
+        <button class="scissors-button"  id="Scissors">Scissors</button>
+      </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
